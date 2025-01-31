@@ -66,7 +66,7 @@ From the results, we see that using `bge-large-en-v1.5` to retrieve the top 15 d
 
 1. Reranking boosts retrieval performance substantially. Adding a reranker improves `gtr-t5-xxl` performance by approximately 4% (52.57% to 56.47%) and `bge-large-en-v1.5` performance by approximately 4% (53.98% to 53.98%).
 
-2. Using bugger model does not necessarily yield better results. At 4.86B, `gtr-t5-xxl` performs worse than `bge-large-en-v1.5` which only has 335M. Time to build index is: `all-mpnet-base-v2` (~10min) < `bge-large-en-v1.5` (~30min) < `bge-large-en-v1.5` (~2h). The time and performance tradeoff for `gtr-t5-xxl` is not good.
+2. Using bigger model does not necessarily yield better results. At 4.86B, `gtr-t5-xxl` performs worse than `bge-large-en-v1.5` which only has 335M. Time to build index is: `all-mpnet-base-v2` (~10min) < `bge-large-en-v1.5` (~30min) < `bge-large-en-v1.5` (~2h). The time and performance tradeoff for `gtr-t5-xxl` is not good.
 
 3. Hybrid search does not improve the search performance but rather degrades it slightly. Adding BM25 to `gtr-t5-xxl` degrades performance from 52.57% to 47.74%. Similarly, when BM25 is add for `bge-large-en-v1.5`, performance drops from 53.98% to 50.01%.
 
