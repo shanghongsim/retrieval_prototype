@@ -25,7 +25,7 @@ For this task, we will primarily explore semantic search with the following mode
 - Smaller than gtr-t5-xxl but expected to be competitive in retrieval.
 - Aims to provide an efficient alternative to the large-scale model.
 
-In this project, we use a mixture of Langchain and FAISS to perform retrieval. The index type is `IndexFlatL2` and similarity metric is euclidean distance.
+In this project, we use a mixture of [Langchain](https://python.langchain.com/docs/integrations/vectorstores/faiss/#manage-vector-store) and [FAISS](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/) to perform retrieval. The index type is `IndexFlatL2` and similarity metric is euclidean distance.
 
 ## Evaluation metrics 📐
 
@@ -93,6 +93,14 @@ From the results, we see that using `bge-large-en-v1.5` to retrieve the top 15 d
 ## Installation & Usage 🛠️
 
 **Installation**
+
+```bash
+conda create --name faiss_1.8.0 python=3.10
+conda activate faiss_1.8.0
+conda install -c pytorch -c nvidia faiss-gpu=1.8.0 pytorch=*=*cuda* pytorch-cuda=12 numpy
+```
+
+> Note: please adjust based on your CUDA version.
 
 ```bash
 pip install -r requirements.txt
