@@ -1,0 +1,4 @@
+task: rerank
+embedding_model: BAAI/bge-large-en-v1.5
+rerank_model: BAAI/bge-reranker-large
+dataset: data/test.jsonl

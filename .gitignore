@@ -176,3 +176,4 @@ faiss_index_bge_large_en_v1.5/
 faiss_index_gtr_t5_xxl/
 *.json
 *.jsonl
+archive/

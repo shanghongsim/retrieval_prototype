@@ -1,0 +1,4 @@
+task: rerank
+embedding_model: sentence-transformers/gtr-t5-xxl
+rerank_model: BAAI/bge-reranker-large
+dataset: data/train.jsonl

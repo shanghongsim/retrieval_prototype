@@ -33,7 +33,7 @@ Hybrid search
 | bge-large-en-v1.5              | 53.98%  |
 | **Hybrid Search**              |             |
 | gtr-t5-xxl + BM25              | 47.74%  | 1.5h
-| bge-large-en-v1.5 + BM25       | N/A     |
+| bge-large-en-v1.5 + BM25       | 50.01%    |
 | **Reranking**                  |             |
 | gtr-t5-xxl + bge-reranker-large | 56.47%  | 5h 20min |
 | bge-large-en-v1.5 + bge-reranker-large | **57.96%**  | 4.5h |

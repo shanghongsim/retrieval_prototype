@@ -1,0 +1,3 @@
+task: single
+embedding_model: sentence-transformers/gtr-t5-xxl
+dataset: data/train.jsonl
