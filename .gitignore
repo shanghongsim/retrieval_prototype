@@ -177,3 +177,5 @@ faiss_index_gtr_t5_xxl/
 *.json
 *.jsonl
 archive/
+.pre-commit-config.yaml
+Makefile
